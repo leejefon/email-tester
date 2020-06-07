@@ -11,6 +11,7 @@ class Dashboard extends Component {
     this.state = {
       transport: '',
       to: '',
+      template: '',
       alertType: '',
       alertMessage: '',
       showLoading: false
@@ -21,7 +22,8 @@ class Dashboard extends Component {
       sendgridProd: 'GSMA Thrive, From info@mail.gotin.online',
       aliCloud: 'From help@gotin.live',
       mailgun: 'From info@mail.gotin.online via Mailgun',
-      gmail: 'From leejefon@gmail.com'
+      gmail: 'From leejefon@gmail.com',
+      qiye163: 'From jeff_lee@gotin.online'
     };
   }
 
@@ -93,6 +95,15 @@ class Dashboard extends Component {
                   <option value="gmail">Gmail</option>
                 </Input>
                 <FormText>{this.helpText[this.state.transport]}</FormText>
+              </FormGroup>
+
+              <FormGroup>
+                <Input type="select" name="template" onChange={(e) => this.handleChange(e)}>
+                  <option value="">Select Email Template</option>
+                  <option value="youdaResetPass">Youda Template (reset password)</option>
+                  <option value="youdaVerifyEmail">Youda Template (verify email)</option>
+                  <option value="simple">Simple</option>
+                </Input>
               </FormGroup>
 
               <FormGroup>

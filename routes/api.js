@@ -1,10 +1,10 @@
 const sendmail = require('../lib/sendmail');
 
 function send(req, res) {
-  const { transport, to: email } = req.body;
+  const { transport, to: email, template } = req.body;
 
   sendmail
-    .testEmail({ email }, transport)
+    .testEmail({ email }, transport, template)
     .then(() => {
       res.send({ status: 'OK' });
     })
