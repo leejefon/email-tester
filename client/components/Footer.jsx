@@ -5,7 +5,7 @@ class Footer extends Component {
     return (
       <footer className="mt-auto text-center">
         <div className="p-4 bg-light mt-4">
-          Jeff Lee &copy; 2020
+          Youda &copy; 2020
         </div>
       </footer>
     );

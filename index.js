@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.get('/api/health', Api.health);
+app.post('/api/email', Api.send);
 
 app.use('/', express.static('./public'));
 app.use('/:page', express.static('./public'));
