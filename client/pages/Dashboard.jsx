@@ -21,6 +21,7 @@ class Dashboard extends Component {
       sendgrid: '39.97.115.156, From info@mail.gotin.online via Sendgrid',
       sendgridProd: 'GSMA Thrive, From info@mail.gotin.online',
       aliCloud: 'From help@gotin.live',
+      aliCloudProd: 'From info@email.gotin.online',
       mailgun: 'From info@mail.gotin.online via Mailgun',
       gmail: 'From leejefon@gmail.com',
       qiye163: 'From jeff_lee@gotin.online'
@@ -91,6 +92,7 @@ class Dashboard extends Component {
                   <option value="sendgrid">Sendgrid</option>
                   <option value="sendgridProd">Sendgrid Prod</option>
                   <option value="aliCloud">Alibaba Direct Mail</option>
+                  <option value="aliCloudProd">Alibaba Direct Mail Prod</option>
                   <option value="mailgun">Mailgun</option>
                   <option value="gmail">Gmail</option>
                 </Input>
